@@ -1,4 +1,4 @@
-                       .model small
+.model small
 .stack 100h  
 
 .data
@@ -45,7 +45,7 @@
         
          
         mov ax,cx  
-        aaa
+        
         
         add ah,48
         
@@ -54,7 +54,7 @@
         int 21h     
             
         mov ax,cx
-        aaa
+        
         add al,48
         mov dl,al
         mov ah,2
@@ -74,7 +74,7 @@
     NOTPRIME: 
     
         mov ax,cx
-        aaa
+      
         add ah,48
         
         mov dl,ah
@@ -82,7 +82,7 @@
         int 21h      
            
         mov ax,cx
-        aaa
+        
         add al,48
         mov dl,al
         mov ah,2
