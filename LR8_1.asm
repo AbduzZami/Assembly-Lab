@@ -31,7 +31,13 @@
         
         jmp l1 
         
-    l2:  
+        
+    l2:     
+         lea dx,msg
+        mov ah,9
+        int 21h   
+        
+        l3:
         
         shr bx,1
         
@@ -51,7 +57,7 @@
             jmp finish
             
         finish:
-        loop l2 
+        loop l3 
       
      
     main endp
